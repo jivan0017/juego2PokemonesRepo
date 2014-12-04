@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es"> 
+	<head>
+		<meta charset ="utf-8"/>
+		<meta description="Descripcion de la page"/>
+
+		<title>POKEMONES</title>
+		<script type="text/javascript" src="js/pokemonController.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/estiloPageBatallaPok.css">
+	</head>	
+
+	<body>
+		<h1>JUEGO -- POKEMONES</h1> 
+		<header>
+			<nav>
+				<h2 id ="lblNombrepokemon">Escoja su pokemon</h2>
+
+				<ul>
+
+					<div id="cajaMenu1">
+							<li id = "item1"> <a id = "link1" href="#" onClick="pintarImagenSeleccionada(2)"> MegaTroll </a> </li>
+					</div>
+					<div id="cajaMenu2">
+							<li id = "item2"> <a id = "link2" href="#" onClick="pintarImagenSeleccionada(3)">UltraPika </a></li>
+					</div>
+					<div id="cajaMenu3">
+							<li id = "item3"> <a id = "link3" href="#" onClick="pintarImagenSeleccionada(4)">Pikachu </a></li>
+					</div>
+					<div id="cajaMenu4">
+							<li id = "item4"> <a id = "link4" href="#" onClick="pintarImagenSeleccionada(5)">ultra Dyno </a></li>
+					</div>
+
+				</ul>
+			</nav>
+
+			<br/>
+
+		</header>
+			        <script>
+                           
+					</script>		
+
+		<div id="bloqueAlineadoIzq">
+		<input type="text" id="textPokemon" /><br/>
+			<h2 id ="lblCaracteristicas">Caracteristicas</h2>
+			<p id="nombrePokemon"> nombre </p>
+			<div id="cajaCaracteristicas">
+				<p id="datosGenerales"> datos generales</p>
+			</div>
+			
+
+		    <p>		        
+		        <input type="button" id="btnSeleccionar" value="Seleccionar pokemon" />
+   		   </p>
+		</div>
+
+		<!-- bloque central -->	
+							<!-- CAPA 1 DE LA PAGINA -->
+			<div id="contenido" >
+				<img name="imagenPokemon"/> 
+			</div>
+
+		<div id="bloqueAlineadoCentro">
+			<p>campo de batalla </p>
+			<br>
+			<div id="imagenContrincantes1">
+					<div id="cajaIzq">poderes:</div>
+					<div id = "cajaIzq2">poderes:</div>
+
+				<img name="imagenPokemonRetador"/>
+				<img name="imagenPokemonRetado"/>
+
+				<p id="datosPeleaPokemones"></p>
+
+			</div>
+			<div>
+				<input type="button" id="btnIniciarBatalla" value="Iniciar Pelea!" />
+			</div>
+
+		</div>
+			    <script type="text/javascript">
+					pintarImagenPorDefecto(1);
+					escuchadorBotonesDeComando_seleccion_contrincantes();
+					escuchadorBoton_IniciarBatallaPokemones();
+				</script>
+	</body>
+</html>
