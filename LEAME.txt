@@ -1,0 +1,2 @@
+Proximamente estaré desplegando nuevamente el proyecto ya que trato de acoplar semánticamente HTML5 con la estructura 
+un poco rudimentaria a como lo venia haciendo sin criterios de usabilidad "FRONT END"
